@@ -1,0 +1,7 @@
+dist
+node_modules
+webpack.config.js
+old
+.parcel-cache/**
+.parcel-cache/data.mbd
+.DS_Store

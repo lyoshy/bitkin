@@ -1,11 +1,11 @@
 // // alert("hello");
 // TEXT ANIMATION
-
-let typeSplit = new SplitType(".hero_main_title, .header_main_title,[text_split]", {
-  types: "lines, words, chars",
-  tagName: "span",
+gsap.matchMedia().add("(min-width: 479px)", () => {
+  let typeSplit = new SplitType(".hero_main_title, .header_main_title,[text_split]", {
+    types: "lines, words, chars",
+    tagName: "span",
+  });
 });
-
 gsap.matchMedia().add("(min-width: 479px)", () => {
   $("[text_split]").each(function () {
     const element = $(this);

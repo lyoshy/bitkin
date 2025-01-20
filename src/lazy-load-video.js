@@ -1,6 +1,7 @@
 // Загрузка видео при попадании в зону видимости
 new LazyLoad({
   elements_selector: "[data-lazy-visible]", // Загружаем видео с атрибутом data-lazy-visible
+  threshold: 0,
 });
 
 // Загрузка видео по ховеру
